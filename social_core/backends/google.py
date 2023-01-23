@@ -65,8 +65,8 @@ class GoogleOAuth2(BaseGoogleOAuth2API, BaseOAuth2):
 
     name = "google-oauth2"
     REDIRECT_STATE = False
-    AUTHORIZATION_URL = "https://accounts.google.com/o/oauth2/auth"
-    ACCESS_TOKEN_URL = "https://accounts.google.com/o/oauth2/token"
+    AUTHORIZATION_URL = "https://accounts.google.com/o/oauth2/v2/auth"
+    ACCESS_TOKEN_URL = "https://oauth2.googleapis.com/token"
     ACCESS_TOKEN_METHOD = "POST"
     REVOKE_TOKEN_URL = "https://accounts.google.com/o/oauth2/revoke"
     REVOKE_TOKEN_METHOD = "GET"
